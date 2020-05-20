@@ -1,0 +1,25 @@
+.sm-font {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  color: white;
+}
+
+.h-f {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-logo {
+  width: 162px;
+  height: 50px;
+}
+
+.header-bg {
+  background-color: #fc5d31;
+}
+
+.cart-h {
+  width: 26px;
+  height: 26px;
+  margin-top: 1%;
+}
