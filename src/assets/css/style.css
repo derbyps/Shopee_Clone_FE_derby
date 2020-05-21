@@ -4,6 +4,10 @@
   color: white;
 }
 
+.ic-text {
+  font-size: 0.8125rem;
+}
+
 .h-f {
   display: flex;
   flex-direction: row-reverse;
@@ -22,4 +26,13 @@
   width: 26px;
   height: 26px;
   margin-top: 1%;
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+.ic-banner {
+  width: 45px;
+  height: 45px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import "../src/assets/style/style.css";
+// import "./App.css";
+import "../src/assets/css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MainRoute from "../src/routes/MainRoute";
 
