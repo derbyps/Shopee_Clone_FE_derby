@@ -8,6 +8,15 @@
   font-size: 0.8125rem;
 }
 
+.ic-category {
+  width: 83.3px;
+  height: 76.13px;
+}
+
+.text-category {
+  font-size: 0.875rem;
+}
+
 .h-f {
   display: flex;
   flex-direction: row-reverse;
@@ -28,6 +37,30 @@
   margin-top: 1%;
 }
 
+.price-tag {
+  font-size: 155%;
+  color: #ee522d;
+}
+
+.bar-bar {
+  border-radius: 8px;
+  border: 1px;
+  background-color: #ffbda6;
+  color: white;
+  width: 80%;
+  font-size: 12px;
+}
+
+.orange {
+  color: #ee522d;
+}
+
+.all-badge {
+  width: 50px;
+  background-color: #ffd839;
+  position: absolute;
+}
+
 body {
   background-color: #f5f5f5 !important;
 }
@@ -35,4 +68,42 @@ body {
 .ic-banner {
   width: 45px;
   height: 45px;
+}
+
+/* Put your css in here */
+
+.left {
+  float: left;
+  width: 30%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.internal {
+  width: 31.75%;
+  height: 100%;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.grey {
+  color: #757585;
+}
+
+.center {
+  float: left;
+  width: 38.9%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 1px;
+  overflow: hidden;
+  /*will change this to hidden later to deny scolling to user*/
+  white-space: nowrap;
+}
+
+.right {
+  float: right;
+  width: 30%;
+  height: 200px;
+  border: 1px solid black;
 }

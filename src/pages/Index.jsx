@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Navigator from "../components/Header";
 import Carousels from "../components/Carousel";
 import Category from "../components/Category";
+import FlashSale from "../components/FlashSale";
+import Footer from "../components/Footer";
 
 class Home extends Component {
   render() {
@@ -11,6 +13,8 @@ class Home extends Component {
         <Navigator />
         <Carousels />
         <Category />
+        <FlashSale />
+        <Footer />
       </div>
     );
   }
