@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Row, Col, Carousel } from "react-bootstrap";
 
 const itemB = [
   {
@@ -46,117 +46,115 @@ const itemB = [
 
 const Carousels = () => {
   return (
-    <div className="mt-4">
-      <Container>
-        <Row>
-          <Col md={8}>
-            <Carousel>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel1.png")}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel2.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel3.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel4.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel5.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel6.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel7.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel8.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel9.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/carousel10.png")}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-          <Col md={4}>
-            <Row>
-              <Col md={12}>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/side-carousel1.jpeg")}
-                  alt="Third slide"
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col className="mt-2" md={12}>
-                <img
-                  className="d-block w-100"
-                  src={require("../assets/img/side-carousel2.png")}
-                  alt="Third slide"
-                />
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row className="border m-0 bg-white py-2 mt-2">
-          {itemB.map((elem, index) => (
-            <Col className="p-1">
-              <div class="d-flex flex-column">
-                <div class="w-100 d-flex justify-content-center">
-                  <img src={elem.img} className="ic-banner d-block" alt="" />
-                </div>
-                <div className="text-center ic-text">{elem.text}</div>
-              </div>
+    <div className="mt-4 mx-5">
+      <Row>
+        <Col md={8}>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel1.png")}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel2.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel3.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel4.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel5.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel6.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel7.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel8.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel9.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/carousel10.png")}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </Col>
+        <Col md={4}>
+          <Row>
+            <Col md={12}>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/side-carousel1.jpeg")}
+                alt="Third slide"
+              />
             </Col>
-          ))}
-        </Row>
-      </Container>
+          </Row>
+          <Row>
+            <Col className="mt-2" md={12}>
+              <img
+                className="d-block w-100"
+                src={require("../assets/img/side-carousel2.png")}
+                alt="Third slide"
+              />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      <Row className="border m-0 bg-white py-2 mt-2">
+        {itemB.map((elem, index) => (
+          <Col className="p-1">
+            <div class="d-flex flex-column">
+              <div class="w-100 d-flex justify-content-center">
+                <img src={elem.img} className="ic-banner d-block" alt="" />
+              </div>
+              <div className="text-center ic-text">{elem.text}</div>
+            </div>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };

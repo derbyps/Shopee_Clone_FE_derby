@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const upperCategory = [
   {
@@ -89,40 +89,38 @@ const lowerCategory = [
 
 const Category = () => {
   return (
-    <div>
-      <Container>
-        <Row className="border p-3 m-0 bg-white py-2 mt-3">
-          <Col md={12}>
-            <span style={{ color: "#777787" }}>
-              <strong>KATEGORI</strong>
-            </span>
+    <div className="mx-5">
+      <Row className="border p-3 m-0 bg-white py-2 mt-3">
+        <Col md={12}>
+          <span style={{ color: "#777787" }}>
+            <strong>KATEGORI</strong>
+          </span>
+        </Col>
+      </Row>
+      <Row className="m-0 p-0 bg-white">
+        {upperCategory.map((elem) => (
+          <Col className="border m-0 p-2">
+            <div class="d-flex flex-column">
+              <div class="w-100 d-flex justify-content-center">
+                <img src={elem.img} className="ic-category d-block" alt="" />
+              </div>
+              <div className="text-center text-category">{elem.text}</div>
+            </div>
           </Col>
-        </Row>
-        <Row className="m-0 p-0 bg-white">
-          {upperCategory.map((elem) => (
-            <Col className="border m-0 p-2">
-              <div class="d-flex flex-column">
-                <div class="w-100 d-flex justify-content-center">
-                  <img src={elem.img} className="ic-category d-block" alt="" />
-                </div>
-                <div className="text-center text-category">{elem.text}</div>
+        ))}
+      </Row>
+      <Row className="m-0 p-0 bg-white">
+        {lowerCategory.map((elem) => (
+          <Col className="border m-0 p-2">
+            <div class="d-flex flex-column">
+              <div class="w-100 d-flex justify-content-center">
+                <img src={elem.img} className="ic-category d-block" alt="" />
               </div>
-            </Col>
-          ))}
-        </Row>
-        <Row className="m-0 p-0 bg-white">
-          {lowerCategory.map((elem) => (
-            <Col className="border m-0 p-2">
-              <div class="d-flex flex-column">
-                <div class="w-100 d-flex justify-content-center">
-                  <img src={elem.img} className="ic-category d-block" alt="" />
-                </div>
-                <div className="text-center text-category">{elem.text}</div>
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+              <div className="text-center text-category">{elem.text}</div>
+            </div>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };

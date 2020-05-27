@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Form, FormControl } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Navigator = () => {
   return (
@@ -9,7 +10,16 @@ const Navigator = () => {
           <Col>
             <div className="d-flex justify-content-between">
               <div>Jual | Download | Ikuti kami di</div>
-              <div>Notifikasi Bantuan Daftar | Login</div>
+              <div className="header-button">
+                Notifikasi Bantuan{" "}
+                <Link to="/register">
+                  <span className="header-button">Daftar</span>
+                </Link>{" "}
+                |{" "}
+                <Link to="/login">
+                  <span className="header-button">Login</span>
+                </Link>
+              </div>
             </div>
           </Col>
         </Row>

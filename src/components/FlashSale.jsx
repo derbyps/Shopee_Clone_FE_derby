@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const flashItem = [
   {
@@ -43,7 +43,7 @@ const flashItem = [
 const FlashSale = () => {
   return (
     <div>
-      <Container>
+      <div className="mx-5">
         <Row className="border p-3 m-0 bg-white py-2 mt-3">
           <Col md={12}>
             <img
@@ -99,7 +99,7 @@ const FlashSale = () => {
             </Col>
           ))}
         </Row>
-      </Container>
+      </div>
       <div className="mt-4 d-flex justify-content-center">
         <Row>
           <Col md={12}>

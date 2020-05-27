@@ -7,6 +7,9 @@
 .ic-text {
   font-size: 0.8125rem;
 }
+.footer-text {
+  font-size: 0.75rem;
+}
 
 .ic-category {
   width: 83.3px;
@@ -17,6 +20,10 @@
   font-size: 0.875rem;
 }
 
+.text-login {
+  font-size: 0.875rem;
+  color: #075ac7;
+}
 .h-f {
   display: flex;
   flex-direction: row-reverse;
@@ -70,6 +77,56 @@ body {
   height: 45px;
 }
 
+.login-bg {
+  background-image: url("../img/daftar-banner.png");
+  background-color: #ee4d2d;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 632px;
+}
+
+.header-button {
+  color: white;
+  text-decoration: none;
+}
+
+.header-button :hover {
+  color: white;
+  text-decoration: none;
+}
+
+.cat-footer {
+  border-top: 4px solid #ee4d2d;
+}
+
+.in-button :hover {
+  color: #ee522d;
+  text-decoration: none;
+}
+
+.bg-button {
+  background-color: #f3816b !important;
+  border: none !important;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #dbdbdb;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #dbdbdb;
+}
+.separator::before {
+  margin-right: 0.25em;
+}
+.separator::after {
+  margin-left: 0.25em;
+}
 /* Put your css in here */
 
 .left {
@@ -106,4 +163,24 @@ body {
   width: 30%;
   height: 200px;
   border: 1px solid black;
+}
+
+.modal-img {
+  height: 432px;
+  /* background-color: transparent !important; */
+  /* color: transparent !important; */
+  /* background-color: rgba(0, 0, 0, 0.0001) !important; */
+  /* background-color: red; */
+  /* opacity: 1 !important; */
+  /* background-color: hsla(0, 0%, 0%, 0); */
+}
+
+.modal-pos {
+  margin-left: 470px;
+  margin-top: 70px;
+  /* background-color: transparent !important; */
+  /* color: transparent !important; */
+  /* opacity: 0.1; */
+  /* background-color: rgba(0, 0, 0, 0.0001) !important; */
+  /* background-color: hsla(0, 0%, 0%, 0); */
 }
