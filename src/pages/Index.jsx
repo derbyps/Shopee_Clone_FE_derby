@@ -40,7 +40,9 @@ class Home extends Component {
     return (
       <div>
         <Navigator />
-        <Carousels />
+        <div className="header-margin">
+          <Carousels />
+        </div>
         <Category />
         <FlashSale />
         <div className="mx-5">
@@ -94,6 +96,13 @@ class Home extends Component {
               alt=""
             />
           </Modal>
+        </div>
+        <div className="fixed-bottom mr-3 mb-5 d-flex justify-content-end">
+          <img
+            // className="fixed-bottom"
+            src={require("../assets/img/telor.png")}
+            alt=""
+          />
         </div>
       </div>
     );

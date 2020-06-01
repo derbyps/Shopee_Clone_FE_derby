@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navigator = () => {
   return (
-    <div className="sm-font header-bg">
+    <div className="sm-font header-bg fixed-top">
       <Container>
         <Row>
           <Col>
